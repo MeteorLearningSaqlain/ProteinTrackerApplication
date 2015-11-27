@@ -91,7 +91,7 @@ if (Meteor.isClient) {
         if(error)
           return alert(error.reason);
       });
-      Session.set('lastAmount', amount);
+      // Session.set('lastAmount', amount);
     },
     'click #quickSubtract' : function(event){
       event.preventDefault();
@@ -100,6 +100,7 @@ if (Meteor.isClient) {
         if(error)
           return alert(error.reason);
       });
+      // Session.set('lastAmount', amount);
     }
   });
 
